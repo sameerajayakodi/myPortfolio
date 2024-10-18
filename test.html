@@ -14,13 +14,13 @@
     </style>
   </head>
   <body class="bg-gray-900">
-    <div class="grid grid-cols-12 gap-2">
+    <div class="flex min-h-screen">
       <!-- left section -->
       <div
-        class="w-full p-6 col-span-3 flex items-center justify-center bg-gray-900 h-full"
+        class="w-2/7 p-6 flex items-center justify-center bg-gray-900 h-screen fixed left-0"
       >
         <div
-          class="bg-gray-900 w-full h-full p-4 border rounded-xl border-2 border items-center flex flex-col justify-center border-2 border-gray-200 text-white border-blue-500"
+          class="bg-gray-900 w-full h-full p-4 border rounded-xl border items-center flex flex-col justify-center border-2 border-gray-200 text-white border-blue-500"
         >
           <!-- Name -->
           <h1 class="text-4xl my-4 font-bold text-center">
@@ -75,11 +75,11 @@
 
       <!-- middle section -->
       <div
-        class="border border-2 text-white bg-gray-900 col-span-8 flex items-center"
+        class="ml-[20%] p-10 flex-1 flex items-start justify-start text-white"
       >
         <div class="max-w-4xl mx-auto">
           <!-- Introduce Button -->
-          <div class="mb-8">
+          <div class="my-10" id="introduce">
             <a
               href="#"
               class="bg-gray-800 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-full inline-flex items-center"
@@ -115,7 +115,8 @@
           </p>
 
           <!-- Experience and Projects Section -->
-          <div class="flex gap-10">
+          <div class="flex gap-10 mb-8">
+            <!-- Add mb-8 for space -->
             <div>
               <span class="text-8xl font-bold text-green-500">2+</span>
               <p class="text-lg uppercase tracking-wide">Years of Experience</p>
@@ -125,38 +126,239 @@
               <p class="ml-6 text-lg uppercase tracking-wide">Projects</p>
             </div>
           </div>
+
+          <!-- About Section -->
+          <div class="mb-10 mt-10" id="about">
+            <a
+              href="#"
+              class="bg-gray-800 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-full inline-flex items-center"
+            >
+              <i class="fas fa-user mr-2"></i>
+              <span>About</span>
+            </a>
+          </div>
+
+          <!-- Main Heading -->
+          <h1 class="text-5xl font-bold leading-tight mb-6">
+            Every Great Solution Begins with an Even
+            <span class="text-green-500">Better Idea</span>
+          </h1>
+
+          <!-- Description Paragraph -->
+          <p class="text-xl leading-relaxed mb-10">
+            <!-- Add mb-10 for space -->
+            <span class="text-green-500 text-4xl font-bold">S</span>ince
+            starting my journey as a Computer Science undergraduate and
+            freelance developer, I've worked on diverse projects that range from
+            academic to real-world applications. I've collaborated with
+            startups, volunteered for tech organizations, and contributed to
+            building software that solves complex problems. With a passion for
+            learning and innovation, I'm constantly exploring new technologies
+            and refining my skills, tackling one challenge at a time. Whether
+            it's coding, design, or development, I thrive on turning ideas into
+            impactful solutions.
+          </p>
+
+          <div class="my-20" id="resume">
+            <a
+              href="#"
+              class="bg-gray-800 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-full inline-flex items-center"
+            >
+              <i class="fas fa-file mr-2"></i>
+              <span>Resume</span>
+            </a>
+          </div>
+
+          <!-- Main Heading -->
+          <h1 class="text-5xl font-bold leading-tight mb-6">
+            Education & <span class="text-green-500">Experience</span>
+          </h1>
+
+          <!-- Education Timeline -->
+          <div class="space-y-6">
+            <div class="bg-gray-800 p-4 rounded-lg mb-6">
+              <!-- Add mb-6 for space -->
+              <h2 class="text-3xl font-semibold">2024 - Present</h2>
+              <p class="text-lg">Computer Science Undergraduate</p>
+              <p class="text-sm text-gray-400">
+                National School of Business Management
+              </p>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-lg mb-6">
+              <!-- Add mb-6 for space -->
+              <h2 class="text-3xl font-semibold">2020</h2>
+              <p class="text-lg">Advanced Level Examination</p>
+              <p class="text-sm text-gray-400">
+                Successfully completed A/L exams with a focus on Mathematics.
+              </p>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-lg mb-6">
+              <!-- Add mb-6 for space -->
+              <h2 class="text-3xl font-semibold">2016</h2>
+              <p class="text-lg">Ordinary Level Examination</p>
+              <p class="text-sm text-gray-400">
+                Successfully completed O/L exams with a strong focus on every
+                subject.
+              </p>
+            </div>
+          </div>
+          <!-- Portfolio Section -->
+          <div class="my-20" id="portfolio">
+            <a
+              href="#"
+              class="bg-gray-800 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-full inline-flex items-center"
+            >
+              <i class="fas fa-briefcase mr-2"></i>
+              <span>Portfolio</span>
+            </a>
+          </div>
+
+          <!-- Featured Projects Section -->
+          <h2 class="text-3xl font-bold mb-6">
+            Featured <span class="text-green-500">Projects</span>
+          </h2>
+          <div class="grid grid-cols-3 gap-4">
+            <!-- Project Cards -->
+            <div class="border border-green-500 rounded-lg p-4">
+              <img
+                src="./Leonardo_Kino_XL_Create_a_sleek_and_modern_interface_for_a_Sma_0.jpg"
+                alt="Smart Attendance Tracker"
+                class="w-full mb-4 rounded-lg"
+              />
+              <h3 class="text-xl font-bold">Smart Attendance Tracker</h3>
+            </div>
+            <div class="border border-green-500 rounded-lg p-4">
+              <img
+                src="./Leonardo_Kino_XL_Create_a_sleek_and_modern_interface_for_a_Sma_2.jpg"
+                alt="E-Commerce Shoe Store"
+                class="w-full mb-4 rounded-lg"
+              />
+              <h3 class="text-xl font-bold">E-Commerce Shoe Store</h3>
+            </div>
+            <div class="border border-green-500 rounded-lg p-4">
+              <img
+                src="./Leonardo_Kino_XL_Create_a_sleek_and_modern_interface_for_a_Sma_3.jpg"
+                alt="Online Auction Management System"
+                class="w-full mb-4 rounded-lg"
+              />
+              <h3 class="text-xl font-bold">
+                Online Auction Management System
+              </h3>
+            </div>
+            <div class="border border-green-500 rounded-lg p-4">
+              <img
+                src="./Leonardo_Kino_XL_Design_an_eyecatching_ecommerce_website_inter_1.jpg"
+                alt="Charity Donation Platform"
+                class="w-full mb-4 rounded-lg"
+              />
+              <h3 class="text-xl font-bold">
+                Charity Donation Platform (HopeLink)
+              </h3>
+            </div>
+            <div class="border border-green-500 rounded-lg p-4">
+              <img
+                src="./Leonardo_Kino_XL_Generate_a_dynamic_online_auction_platform_in_0.jpg"
+                alt="Library Management System"
+                class="w-full mb-4 rounded-lg"
+              />
+              <h3 class="text-xl font-bold">Library Management System</h3>
+            </div>
+            <div class="border border-green-500 rounded-lg p-4">
+              <img
+                src="./Leonardo_Kino_XL_Generate_a_dynamic_online_auction_platform_in_1.jpg"
+                alt="Library Management System"
+                class="w-full mb-4 rounded-lg"
+              />
+              <h3 class="text-xl font-bold">Online Booking System</h3>
+            </div>
+          </div>
+
+          <!-- Contact Section -->
+          <div class="my-20" id="contact">
+            <a
+              href="#"
+              class="bg-gray-800 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-full inline-flex items-center"
+            >
+              <i class="fas fa-phone mr-2"></i>
+              <span>Contact</span>
+            </a>
+          </div>
+
+          <!-- Main Heading -->
+          <h2 class="text-5xl font-bold leading-tight mb-6">
+            Let's Work <span class="text-green-500">Together!</span>
+          </h2>
+
+          <div class="bg-gray-800 p-6 rounded-lg">
+            <h3 class="text-2xl font-bold mb-4">Contact</h3>
+            <form>
+              <div class="grid grid-cols-2 gap-4 mb-4">
+                <input
+                  type="text"
+                  placeholder="First Name"
+                  class="bg-gray-900 p-3 rounded-lg text-white"
+                />
+                <input
+                  type="text"
+                  placeholder="Last Name"
+                  class="bg-gray-900 p-3 rounded-lg text-white"
+                />
+                <input
+                  type="text"
+                  placeholder="Phone"
+                  class="bg-gray-900 p-3 rounded-lg text-white"
+                />
+                <input
+                  type="email"
+                  placeholder="Email"
+                  class="bg-gray-900 p-3 rounded-lg text-white"
+                />
+              </div>
+              <textarea
+                placeholder="Message"
+                class="bg-gray-900 p-3 rounded-lg text-white w-full h-32 mb-4"
+              ></textarea>
+              <button
+                type="submit"
+                class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-6 rounded-full"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
         </div>
       </div>
+
       <!-- right section -->
-      <div class="col-span-1 bg-gray-900">
+      <div class="bg-gray-900 fixed right-6 h-screen">
         <div class="flex justify-center items-center h-screen">
           <!-- Vertical Navigation Bar -->
           <div
             class="nav-bar bg-gray-900 border border-1 border-gray-200 w-16 gap-12 rounded-full flex flex-col justify-between items-center py-6"
           >
             <!-- Home Icon -->
-            <a href="#" class="text-green-500 hover:text-green-400">
+            <a href="#introduce" class="text-green-500 hover:text-green-400">
               <i class="fas fa-home text-xl"></i>
             </a>
 
             <!-- User Icon -->
-            <a href="#" class="text-white hover:text-gray-400">
+            <a href="#about" class="text-white hover:text-gray-400">
               <i class="fas fa-user text-xl"></i>
             </a>
 
-            <!-- File Icon -->
-            <a href="#" class="text-white hover:text-gray-400">
-              <i class="fas fa-file-alt text-xl"></i>
+            <!-- Portfolio Icon -->
+            <a href="#resume" class="text-white hover:text-gray-400">
+              <i class="fas fa-file text-xl"></i>
             </a>
 
-            <!-- Briefcase Icon -->
-            <a href="#" class="text-white hover:text-gray-400">
+            <!-- Skills Icon -->
+            <a href="#portfolio" class="text-white hover:text-gray-400">
               <i class="fas fa-briefcase text-xl"></i>
             </a>
 
-            <!-- Phone Icon -->
-            <a href="#" class="text-white hover:text-gray-400">
-              <i class="fas fa-phone text-xl"></i>
+            <!-- Contact Icon -->
+            <a href="#contact" class="text-white hover:text-gray-400">
+              <i class="fas fa-envelope text-xl"></i>
             </a>
           </div>
         </div>
